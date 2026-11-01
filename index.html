@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Merhaba</title>
+  <meta name="description" content="Basit ve şık bir Merhaba sayfası.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%8B%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f7f3ec;
+      --ink: #1f1b16;
+      --muted: #7a7064;
+      --accent: #c8553d;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16140f;
+        --ink: #f3ede2;
+        --muted: #9c9284;
+        --accent: #e8836b;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body {
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    main { text-align: center; animation: rise .9s ease-out both; }
+    h1 {
+      font-size: clamp(3.5rem, 16vw, 9rem);
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    h1 span { color: var(--accent); }
+    p {
+      margin-top: 1.25rem;
+      color: var(--muted);
+      font-size: clamp(1rem, 3vw, 1.25rem);
+      font-style: italic;
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      main { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Merhaba<span>.</span></h1>
+    <p>Buraya uğradığın için teşekkürler.</p>
+  </main>
+</body>
+</html>
